@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Plant Tracker| Professional Plant Care</title>
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header class="app-header">
+            <h1 class="logo">Plant Tracker</h1>
+            <p class="tagline">Your professional plant care companion</p>
+            <div class="header-decoration"></div>
+        </header>
+
+        <section class="weather-section">
+            <div class="weather-card">
+                <div class="weather-display">
+                    <div class="weather-icon" id="weather-icon">
+                        <i class="fas fa-cloud-sun"></i>
+                    </div>
+                    <div class="weather-info">
+                        <div class="temperature" id="temperature">--°C</div>
+                        <div class="conditions" id="conditions">Loading weather...</div>
+                    </div>
+                </div>
+                <div class="location-controls">
+                    <input type="text" id="location-input" class="location-input" placeholder="Enter city name">
+                    <button id="update-weather" class="weather-button">
+                        <i class="fas fa-sync-alt"></i> Update
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <main class="app-main">
+            <aside class="plant-selector">
+                <h2 class="section-title">
+                    <i class="fas fa-leaf"></i> Your Plants
+                </h2>
+                <div class="plant-list" id="plant-list">
+                </div>
+                <button id="add-plant" class="add-button">
+                    <i class="fas fa-plus"></i> Add New Plant
+                </button>
+            </aside>
+
+            <section class="plant-details" id="plant-details">
+                <div class="empty-state">
+                    <div class="empty-icon">
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <h3>No Plant Selected</h3>
+                    <p>Choose a plant from the sidebar to view care details</p>
+                </div>
+            </section>
+        </main>
+
+        <div id="notification" class="notification hidden"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
+  
